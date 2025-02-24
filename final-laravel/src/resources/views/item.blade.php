@@ -2,7 +2,7 @@
 
 @section('content')
 @if ($item->soldToUsers()->exists())
-<div class="link-button link-button--disabled">売り切れ</div>
+<div class="link-button link-button--disabled">SOLD OUT</div>
 @elseif ($userItem)
 <a class="link-button link-button--blue" href="/sell/{{ $item->id }}">編集する</a>
 @else
