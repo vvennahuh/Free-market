@@ -15,31 +15,31 @@ class ConditionsTableSeeder extends Seeder
     public function run()
     {
         Condition::create([
-            'condition' => '最高',
+            'name' => '最高',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         Condition::create([
-            'condition' => '良い',
+            'name' => '良い',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         Condition::create([
-            'condition' => '普通',
+            'name' => '普通',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         Condition::create([
-            'condition' => '悪い',
+            'name' => '悪い',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         Condition::create([
-            'condition' => '最悪',
+            'name' => '最悪',
             'created_at' => now(),
             'updated_at' => now(),
         ]);//
