@@ -38,7 +38,7 @@ class ConditionsTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        condition::create([
+        Condition::create([
             'condition' => '最悪',
             'created_at' => now(),
             'updated_at' => now(),
