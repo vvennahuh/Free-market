@@ -17,7 +17,7 @@ http://localhost/
 
 ## 環境構築
 - Dockerビルド
-1.git clone git@github.com:coachtech-material/laravel-docker-template.git
+1.git clone https://github.com/vvennahuh/Free-market.git
 2.docker-compose up -d --build
 
 - Laravel環境構築
