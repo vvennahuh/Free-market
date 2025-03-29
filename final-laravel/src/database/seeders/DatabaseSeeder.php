@@ -21,10 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(LikesTableSeeder::class);
         $this->call(ProfilesTableSeeder::class);
         $this->call(PaymentsTableSeeder::class);
-        $this->call(Sold_itemsTableSeeder::class);
-        $this->call(Category_itemsTableSeeder::class);
-        $this->call(ShopsTableSeeder::class);
-        $this->call(Shop_staffTableSeeder::class);
-        $this->call(Shop_itemsTableSeeder::class);// \App\Models\User::factory(10)->create();
+        $this->call(PurchasesTableSeeder::class);
+        $this->call(Category_itemsTableSeeder::class);// \App\Models\User::factory(10)->create();
     }
 }
