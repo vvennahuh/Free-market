@@ -38,8 +38,6 @@ DB_PASSWORD=laravel_pass）
 - Laravel 8.x
 - Mysql 8.0.26
 
-## ER図
-
 
 ## URL
 - 開発環境
