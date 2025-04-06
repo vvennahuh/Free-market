@@ -19,8 +19,6 @@ class ItemsTableSeeder extends Seeder
             'price' => '5000',
             'description' => "カラー：赤\n\n新品。商品の状態は良好です。\n\n購入後、即日発送いたします。",
             'img_url' => '/img/dummy/Purse+fashion+pocket.jpg',
-            'user_id' => 1,
-            'condition_id' => 1,
             'created_at' => now(),
             'updated_at' => now(),
         ]); //
