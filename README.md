@@ -23,7 +23,7 @@ http://localhost/
 
 - Laravel環境構築
 - 1.composer install(PHPコンテナ内)
-- 2. Free-market/src内で.env.exampleファイルから.env作成後、環境変数を以下のように編集
+- 2.Free-market/src内で.env.exampleファイルから.env作成後、環境変数を以下のように編集
 - （DB_DATABASE=laravel_db/DB_USERNAME=laravel_user/DB_PASSWORD=laravel_pass）
 - 3.php artisan key:generate(PHPコンテナ内・アプリケーションキー作成)
 - 4.php artisan migrate --seed（PHPコンテナ内・データベースの作成）
