@@ -16,22 +16,20 @@ http://localhost/
 
 
 ## 環境構築
-- Dockerビルド
-1.git clone https://github.com/vvennahuh/Free-market.git
-2.docker-compose up -d --build
+- Dockerビルド(ターミナル・cmd内)
+- 1.git clone https://github.com/vvennahuh/Free-market.git
+- 2.docker-compose up -d --build
+- 3.docker-compose exec php bash（ターミナル・cmd→PHPコンテナにログイン）
 
 - Laravel環境構築
-1.docker-compose exec php bash
-2.composer install
-3. .env.exampleファイルから.env作成。環境変数の変更
-（DB_DATABASE=laravel_db
-DB_USERNAME=laravel_user
-DB_PASSWORD=laravel_pass）
-4.php artisan key:generate
-5.php artisan migrate
-6.composer require laravel/fortify
-7.composer require laravel-lang/lang:~7.0 --dev
-8.cp -r ./vendor/laravel-lang/src/ja ./resources/lang/
+- 1.composer install(PHPコンテナ内)
+- 2. Free-market/src内で.env.exampleファイルから.env作成後、環境変数を以下のように編集
+- （DB_DATABASE=laravel_db/DB_USERNAME=laravel_user/DB_PASSWORD=laravel_pass）
+- 3.php artisan key:generate(PHPコンテナ内・アプリケーションキー作成)
+- 4.php artisan migrate --seed（PHPコンテナ内・データベースの作成）
+- 5.composer require laravel/fortify(PHPコンテナ内・Fortifyのインストール)
+- 6.composer require laravel-lang/lang:~7.0 --dev（PHPコンテナ内・Laravelのインストール）
+- 7.cp -r ./vendor/laravel-lang/src/ja ./resources/lang/（PHPコンテナ内・会員登録および認証用の日本語ファイルの追加）
 
 ## 使用技術(実行環境)
 - PHP 3.8
